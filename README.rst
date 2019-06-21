@@ -3,6 +3,11 @@ git-joke
 
 .. image:: https://travis-ci.org/vitakrya/git-joke-cli.svg?branch=master
     :target: https://travis-ci.org/vitakrya/git-joke-cli
+    :alt: Travis build
+
+.. image:: https://readthedocs.org/projects/git-joke-cli/badge/?version=latest
+:target: https://git-joke-cli.readthedocs.io/en/latest/?badge=latest
+:alt: Documentation Status
 
 Usage
 -----
