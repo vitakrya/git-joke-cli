@@ -14,6 +14,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
 sys.setrecursionlimit(1500)
+from gitjoke import __version__
 
 # -- Project information -----------------------------------------------------
 
@@ -22,7 +23,7 @@ copyright = '2019, Vita Kr'
 author = 'Vita Kr'
 
 # The full version, including alpha/beta/rc tags
-release = '1.1.1'
+release = __version__
 
 # -- General configuration ---------------------------------------------------
 

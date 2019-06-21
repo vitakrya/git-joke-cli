@@ -12,8 +12,9 @@ from docopt import docopt
 from halo import Halo
 
 from gitjoke.extractor import get_joke, get_jokes
+from gitjoke import __version__
 
-arguments = docopt(__doc__, version="1.0.0")
+arguments = docopt(__doc__, version=__version__)
 
 with Halo(text='Fetching', spinner='dots') as sp:
     if arguments.get('--all'):
