@@ -9,12 +9,16 @@ Options:
     -a --all  Show all jokes
 """
 from docopt import docopt
+from halo import Halo
 
 from gitjoke.extractor import get_joke, get_jokes
 
 arguments = docopt(__doc__, version="1.0.0")
 
-if arguments.get('--all'):
-    print('\n'.join(get_jokes()))
-else:
-    print(get_joke())
+with Halo(text='Fetching', spinner='dots') as sp:
+    if arguments.get('--all'):
+        res = '\n'.join(get_jokes())
+    else:
+        res = get_joke()
+    sp.clear()
+    print(res)

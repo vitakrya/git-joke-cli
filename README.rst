@@ -7,8 +7,8 @@ git-joke
 Usage
 -----
 
-Example from the internal
-help command::
+Example from the internal help command::
+
     $ git-joke -h
     Display random git joke or all git jokes
     Usage:
